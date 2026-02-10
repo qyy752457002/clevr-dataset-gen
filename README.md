@@ -56,7 +56,7 @@ First we render synthetic images using [Blender](https://www.blender.org/), outp
 Blender ships with its own installation of Python which is used to execute scripts that interact with Blender; you'll need to add the `image_generation` directory to Python path of Blender's bundled Python. The easiest way to do this is by adding a `.pth` file to the `site-packages` directory of Blender's Python, like this:
 
 ```bash
-echo $PWD/image_generation >> $BLENDER/$VERSION/python/lib/python3.5/site-packages/clevr.pth
+echo $PWD/image_generation >> $BLENDER/2.83/python/lib/python3.7/site-packages/clevr.pth
 ```
 
 where `$BLENDER` is the directory where Blender is installed and `$VERSION` is your Blender version; for example on OSX you might run:
